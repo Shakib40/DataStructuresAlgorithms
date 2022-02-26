@@ -1,0 +1,1 @@
+// all subarray  : N(N +1)/2 possible for array
