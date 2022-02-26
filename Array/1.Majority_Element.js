@@ -42,7 +42,6 @@
 //             obj[x] = 1
 //         }
 //     }
-    
 
 //     for(y in obj){
 //         if(obj[y] > (array.length-1)/2 ){
@@ -69,10 +68,3 @@ function MajorityElement(array , N){
 
 console.log(MajorityElement([4,4,3,4,2,4,5,6,4,4] , 10));
 
-
-
-// function MajorityElement(array){
-
-// }
-
-// console.log(MajorityElement([4,4,3,4,2,4,5,6,4,4]));

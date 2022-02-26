@@ -36,13 +36,13 @@
 // console.log(singleNumber([7,2,4,6,4,2,6]));
 
 
-const singleCharacter = (str) => {
-    let res = str[0]
+// const singleCharacter = (str) => {
+//     let res = str[0]
 
-    for (let i = 1; i < str.length; i++) {
-        res = res ^ str[i]
-    } 
-    return res
- }
+//     for (let i = 1; i < str.length; i++) {
+//         res = res ^ str[i]
+//     } 
+//     return res
+//  }
  
- console.log( singleCharacter( [ 'a','v','b','c','v','b','c']) );
+//  console.log( singleCharacter( [ 'a','v','b','c','v','b','c']) );
