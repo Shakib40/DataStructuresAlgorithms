@@ -1,24 +1,41 @@
+function WordFrequency(input){
+  let map = new Map()
+  for( data of input){
+      if(map.has(data)){
+        map.set(data, map.get(data) + 1);
+      }else{
+          map.set(data, 1)
+      }
+  }
+
+  var mapAsc = new Map( [...map.entries()].sort());
+
+  for( let [k , v] of mapAsc){
+      console.log( k + " " + v)
+  }   
+
+}
+
 function runProgram(input) {
     input = input.trim().split("\n");
-    let testcase = input[0];
+    let N = input[0];
     let line =1;
-     
-    for (let i = 0; i < testcase; i++){
-        let N = input[line++].trim();
-        let array = input[line++].trim().split(" ").map(Number);
-        let Q = input[line++].trim();
-        console.log( array , N , Q );
+    let words = [];
+    for (let i = 0; i <N ; i++){
+        let array = input[line++].trim();
+        words.push(array)
     }
-   
+    // console.log(words);
+    WordFrequency(words)
   }
+
+
   if (process.env.USERNAME === "shakib") {
-    runProgram(`2
-    6
-    1 3 5 2 7 4
-    1
-    6 
-    1 3 5 2 7 4
-    2`);
+    runProgram(`4
+    prateek
+    nrupul
+    yogesh
+    prateek`);
   } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");

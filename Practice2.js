@@ -1,24 +1,19 @@
+function MajorityElement(array){
+   
+    
+}
+
 function runProgram(input) {
     input = input.trim().split("\n");
-    let testcase = input[0];
-    let line =1;
-     
-    for (let i = 0; i < testcase; i++){
-        let N = input[line++].trim();
-        let array = input[line++].trim().split(" ").map(Number);
-        let Q = input[line++].trim();
-        console.log( array , N , Q );
-    }
-   
+    let N = input[0];
+    let array = input[1].trim().split(" ").map(Number);
+    // console.log(N , array ); 
+    console.log( MajorityElement(array) );
   }
+
   if (process.env.USERNAME === "shakib") {
-    runProgram(`2
-    6
-    1 3 5 2 7 4
-    1
-    6 
-    1 3 5 2 7 4
-    2`);
+    runProgram(`5
+    3 3 5 5 1`);
   } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");

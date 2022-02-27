@@ -48,3 +48,5 @@ function EquilibriumIndex(array){
 }
 
 console.log( EquilibriumIndex( [-7,1,5,2,-4,3,0]  ));
+
+console.log( EquilibriumIndex( [3,3,5,5,1]  ));

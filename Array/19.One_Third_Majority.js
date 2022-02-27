@@ -1,24 +1,32 @@
+function OneThirdMajority(array){
+    let dp = {};
+    for (let i = 0; i < array.length; i++){
+      
+        if(array[i] in dp){
+            dp[array[i]] += 1
+        }else {
+            dp[array[i]] = 1
+        }
+    }
+    // console.log(dp);
+    for(key in dp){
+        if(dp[key] > (array.length / 3)){
+            console.log(key);
+        }
+   }  
+}
+
 function runProgram(input) {
     input = input.trim().split("\n");
-    let testcase = input[0];
-    let line =1;
-     
-    for (let i = 0; i < testcase; i++){
-        let N = input[line++].trim();
-        let array = input[line++].trim().split(" ").map(Number);
-        let Q = input[line++].trim();
-        console.log( array , N , Q );
-    }
+    let N = input[0];
+    let array = input[1].trim().split(" ").map(Number);
+    // console.log(N , array );
+    OneThirdMajority(array)
    
   }
   if (process.env.USERNAME === "shakib") {
-    runProgram(`2
-    6
-    1 3 5 2 7 4
-    1
-    6 
-    1 3 5 2 7 4
-    2`);
+    runProgram(`3
+    3 2 3`);
   } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");

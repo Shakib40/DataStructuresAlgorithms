@@ -49,10 +49,3 @@
 
 // }
 // console.log(SeperateEvenOdd([ 12,34,45,9,8,90,3] ));
-
-
-
-// function SeperateEvenOdd(array){
-  
-// }
-// console.log(SeperateEvenOdd([ 12,34,45,9,8,90,3] ));
