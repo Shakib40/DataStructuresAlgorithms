@@ -1,0 +1,13 @@
+Linear Data Structure
+
+> Array
+> Stacks
+> Queue
+> Linked List
+
+
+Non linear data structure
+> Tree
+> Graphs
+> Heaps
+> Hashing
