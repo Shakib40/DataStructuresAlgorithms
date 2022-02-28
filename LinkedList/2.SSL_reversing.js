@@ -5,6 +5,5 @@ function reverse(head){
         reverse(head.next)
         console.log(head.data);
     }
-
 }
 
