@@ -1,13 +1,24 @@
+function NumberOfWays(N){
+    if(N <0){
+        return 0
+    }
+    if(N ==0){
+        return 1
+    }
+
+    return NumberOfWays(N-3) + NumberOfWays(N-2) + NumberOfWays( N -1)
+
+ }
+
 function runProgram(input) {
     input = input.trim().split("\n");
     let N = input[0];
-    let array = input[1].trim().split(" ").map(Number);
-    console.log(array , N );
-   
-  }
+    // console.log(N); 
+    console.log( NumberOfWays(N) );
+}
+
   if (process.env.USERNAME === "shakib") {
-    runProgram(`5
-    4 7 8 3 4`);
+    runProgram(`4`);
   } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");

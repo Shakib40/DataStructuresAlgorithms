@@ -31,6 +31,7 @@ function append(new_data) {
 		head = new Node(new_data);
 		return;
 	}
+	
 	new_node.next = null;
 	var last = head;
 	while (last.next != null)
