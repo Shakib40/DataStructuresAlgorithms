@@ -20,6 +20,6 @@ function firstOccuranceOfTarget( array , target){
 
 
 let array = [1,1,2,2,2,2,2,2,2,5,6,6,6,]
-let target = 6
+let target = 2
 
 console.log( firstOccuranceOfTarget( array , target) );

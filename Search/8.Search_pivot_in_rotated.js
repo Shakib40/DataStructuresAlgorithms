@@ -35,9 +35,9 @@ function pivotPosition( array , N){
         
         let mid = low + Math.floor( (high - low)/2 )
         if( array[mid] > array[mid+1] ){
-          return N- mid + 1
+          return  mid + 1
         }else if( array[mid] < array[mid-1] ){
-              return N- mid
+              return  mid
         }else if( array[low] <= array[mid]){
             low = mid + 1
         }else if( array[mid] <= array[high]){

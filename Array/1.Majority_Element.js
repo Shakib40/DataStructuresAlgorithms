@@ -55,6 +55,7 @@
 
 //Time : O(NlogN)
 //Space : O(1)
+
 function MajorityElement(array , N){
    array.sort(function(a,b){ return a - b}) // Merge sort O(NlogN)
 

@@ -57,5 +57,5 @@ function findElement(array , N , target ){
 
 let array = [13,14,18,20,22,26,30,35,40,50,2,5,6,8,11,12];
 
-console.log( findElement(array , array.length-1 , 12 ) );
+console.log( findElement(array , array.length-1 , 13 ) );
 

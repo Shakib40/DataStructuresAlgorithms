@@ -24,16 +24,16 @@
 // };
 
 
-// const singleNumber = (array) => {
-//     let res = array[0]
+const singleNumber = (array) => {
+    let res = array[0]
 
-//     for( let i = 1; i < array.length; i++ ){
-//         res = res ^ array[i]
-//     }
-//     return res
-// }
+    for( let i = 1; i < array.length; i++ ){
+        res = res ^ array[i]
+    }
+    return res
+}
 
-// console.log(singleNumber([7,2,4,6,4,2,6]));
+console.log(singleNumber([7,2,4,6,4,2,6]));
 
 
 // const singleCharacter = (str) => {

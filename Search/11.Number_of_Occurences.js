@@ -42,6 +42,7 @@ function runProgram(input) {
     input = input.trim().split("\n");
     let [N,K] = input[0].split(" ").map(Number);
     let array = input[1].trim().split(" ").map(Number);
+    
     let first = lowerBond(array,N,K)
     let last = upperBond(array,N,K)
     if( first == -1 && last == -1){
